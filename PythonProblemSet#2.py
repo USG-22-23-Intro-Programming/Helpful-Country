@@ -9,18 +9,22 @@ def factorial(x):
     print (y)
 
 #Double It!
-def double():
+'''def double():
     double = input("What do word do you want to double?")
-    output = ""
+    
     #^ the quotations marks are just there to just keep the whole word together, compliling them
     for char in double:
         output = output + char * 2
-    print(output)
+    print(output)'''
 
 #Camel Case!
-def 
-
-        
+def camelCase():
+    file = (input("Enter a filename"))
+    split = file.split("  ")
+    camelcase = split[0] + "".join(word.title() for word in split[1:])
+    camelcase = camelcase.replace("/","-")
+    camelcase = camelcase.replace("_","")
+    print(camelcase)
     
 def main():
     factorial(6)
@@ -29,13 +33,5 @@ def main():
 
 if __name__ == "__main__":
     main()
-    double()
-
-
-    
-    
-    
-    
-    
-    
-    
+    #double()
+    camelCase()
